@@ -3,31 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cho Bo Hong - Resume</title>
+    <title>Bo Hong Cho - Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="profile-container">
-                <div class="profile-image">
-                    <img src="Image/Photo.jpeg" alt="Cho Bo Hong">
-                </div>
-                <div class="profile-details">
-                    <h1>Cho Bo Hong <span class="chinese-name">卓鉑閎</span></h1>
-                    <div class="contact-info">
-                        <p><i class="fas fa-phone"></i> +886 0929510661</p>
-                        <p><i class="fas fa-envelope"></i> ryan900911@gmail.com</p>
-                        <p><i class="fab fa-github"></i> <a href="https://github.com/Hongggggggggggg" target="_blank">github.com/Hongggggggggggg</a></p>
-                    </div>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Bo Hong Cho - Personal Website</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#major-experiences">Major Achievements</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
             </div>
-        </header>
+        </div>
+    </nav>
 
-        <section class="about">
-            <h2><i class="fas fa-user"></i> About Me</h2>
-            <div class="section-content">
+    <!-- 英雄區塊 -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Bo Hong Cho <span class="chinese-name">卓鉑閎</span></h1>
+            <p class="hero-subtitle">Software Engineer & Test Automation Specialist</p>
+        </div>
+        <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Learn About My Professional Background and Interests</p>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="Image/Photo.jpeg" alt="Bo Hong Cho">
+            </div>
+            <div class="about-text">
                 <p>Hello, I have approximately 2 years of experience in backend development and automated testing. I am proficient in using <strong>Java</strong> with <strong>Spring Boot</strong> to develop <strong>RESTful APIs</strong> and possess foundational skills in <strong>Docker</strong> and <strong>MySQL</strong> to optimize system performance and architecture.</p>
                 
                 <p>Additionally, I specialize in writing API automation scripts using <strong>Postman</strong> and conducting frontend and full-stack UI testing with <strong>Selenium</strong>, <strong>Python</strong>, and <strong>PyTest</strong>. I've also integrated these into <strong>CI/CD</strong> pipelines with <strong>Jenkins</strong>, significantly reducing regression testing time and improving product release quality.</p>
@@ -36,79 +55,97 @@
                 
                 <p>Moreover, I have led cross-national development teams of 5 to 10 members, communicating and collaborating effectively with teammates from different backgrounds. As a project lead, I was responsible for requirements analysis and system design, ensuring timely project delivery. I am also skilled in writing technical documentation and <strong>API</strong> specifications, and I utilize <strong>AI</strong> tools to support development and project management workflows. I look forward to growing in a new environment and contributing to impactful products with a talented team.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="skills">
-            <h2><i class="fas fa-code"></i> Skills & Abilities</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Programming & Frameworks</h3>
-                    <ul>
-                        <li>Java + Spring Boot (RESTful API development)</li>
-                        <li>Python + Selenium (Automated testing)</li>
-                        <li>MySQL (Database and SQL)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Cloud & Tools</h3>
-                    <ul>
-                        <li>AWS (CloudWatch, SQS, Secrets Manager, etc.)</li>
-                        <li>Docker, Kubernetes, Jenkins, GitHub Actions, Argo CD</li>
-                        <li>Git version control</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Testing & Quality</h3>
-                    <ul>
-                        <li>Postman (API testing and automation)</li>
-                        <li>Python + PyTest (UI functional testing)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Certifications</h3>
-                    <ul>
-                        <li>AWS Certified Solutions Architect – Associate</li>
-                        <li>TOEIC 810</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="experience">
-            <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
-            
-            <div class="job">
-                <div class="job-header">
-                    <h3>Software Engineer - eGroupAI CO., LTD.</h3>
-                    <p class="job-date">2024/01 - 2025/03</p>
-                </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-title">
+            <h2>Skills & Expertise</h2>
+            <p>My Professional Capabilities and Technology Stack</p>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming & Frameworks</h3>
                 <ul>
-                    <li>Acted as the main backend and automation testing lead in a multinational development team</li>
-                    <li>Developed RESTful APIs using Java + Spring Boot and planned/wrote tests using Postman and Selenium</li>
-                    <li>Set up automated testing workflows with Jenkins Pipeline to reduce manual regression testing time</li>
-                    <li>Utilized AWS services (EC2, CloudWatch, SQS, Secrets Manager, etc.) for cloud deployment and monitoring</li>
-                    <li>Introduced Docker containerization to some services, reducing deployment conflicts</li>
-                    <li>Learned and used Python + Selenium for UI testing, laying the foundation for test automation</li>
+                    <li>Java + Spring Boot (RESTful API development)</li>
+                    <li>Python + Selenium (Automated testing)</li>
+                    <li>MySQL (Database and SQL)</li>
                 </ul>
             </div>
-            
-            <div class="job">
-                <div class="job-header">
-                    <h3>Intern - eGroupAI CO., LTD.</h3>
-                    <p class="job-date">2022/07 - 2023/12</p>
-                </div>
+            <div class="skill-category">
+                <h3>Cloud Services & Tools</h3>
                 <ul>
-                    <li>Assisted in developing multiple functional modules using Java + Spring Boot to support fast team iterations</li>
-                    <li>Collaborated with frontend and QA teams to fulfill cross-country project requirements</li>
+                    <li>AWS (CloudWatch, SQS, Secrets Manager, etc.)</li>
+                    <li>Docker, Kubernetes, Jenkins, GitHub Actions, Argo CD</li>
+                    <li>Git version control</li>
                 </ul>
             </div>
-        </section>
+            <div class="skill-category">
+                <h3>Testing & Quality</h3>
+                <ul>
+                    <li>Postman (API testing and automation)</li>
+                    <li>Python + PyTest (UI functional testing)</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>AWS Certified Solutions Architect – Associate</li>
+                    <li>TOEIC 810</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-        <section class="major-experiences">
-            <h2><i class="fas fa-star"></i> Major Experiences</h2>
+    <!-- Work Experience Section -->
+    <section id="experience">
+        <div class="section-title">
+            <h2>Work Experience</h2>
+            <p>My Professional Career History</p>
+        </div>
+        <div class="timeline">
+            <div class="job">
+                <div class="job-content">
+                    <div class="job-header">
+                        <h3>Software Engineer - eGroupAI CO., LTD.</h3>
+                        <p class="job-date">2024/01 - 2025/03</p>
+                    </div>
+                    <ul>
+                        <li>Acted as the main backend and automation testing lead in a multinational development team</li>
+                        <li>Developed RESTful APIs using Java + Spring Boot and planned/wrote tests using Postman and Selenium</li>
+                        <li>Set up automated testing workflows with Jenkins Pipeline to reduce manual regression testing time</li>
+                        <li>Utilized AWS services (EC2, CloudWatch, SQS, Secrets Manager, etc.) for cloud deployment and monitoring</li>
+                        <li>Introduced Docker containerization to some services, reducing deployment conflicts</li>
+                        <li>Learned and used Python + Selenium for UI testing, laying the foundation for test automation</li>
+                    </ul>
+                </div>
+            </div>
             
+            <div class="job">
+                <div class="job-content">
+                    <div class="job-header">
+                        <h3>Intern - eGroupAI CO., LTD.</h3>
+                        <p class="job-date">2022/07 - 2023/12</p>
+                    </div>
+                    <ul>
+                        <li>Assisted in developing multiple functional modules using Java + Spring Boot to support fast team iterations</li>
+                        <li>Collaborated with frontend and QA teams to fulfill cross-country project requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Major Achievements Section -->
+    <section id="major-experiences">
+        <div class="section-title">
+            <h2>Major Achievements</h2>
+            <p>My Professional Projects and Accomplishments</p>
+        </div>
+        <div class="experiences-container">
             <div class="experience-category">
-                <h3>Automated Testing & Backend Development</h3>
+                <h3>Automation Testing & Backend Development</h3>
                 <ul>
                     <li><strong>Spring Boot RESTful API:</strong> Responsible for backend design and implementation of multiple functional modules, including database schema design and integration.</li>
                     <li><strong>Python + Selenium + PyTest:</strong> Built a custom UI testing framework to reduce manual testing workload and time, integrated with Jenkins for automated execution.</li>
@@ -126,32 +163,137 @@
             </div>
             
             <div class="experience-category">
-                <h3>Cross-National Collaboration</h3>
+                <h3>Cross-national Collaboration</h3>
                 <ul>
                     <li>Collaborated with cross-national teams of 5 to 10 members, responsible for planning and implementing API specifications.</li>
                     <li>Communicated effectively with PMs and other developers to ensure clear requirements and on-schedule progress.</li>
                     <li>Leveraged AI tools like ChatGPT to assist in documentation, code refinement, and requirement analysis.</li>
                 </ul>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="projects">
-            <h2><i class="fas fa-code-branch"></i> Side Projects</h2>
-            <div class="section-content">
-                <p><strong>DevOps Demo:</strong> <a href="https://github.com/Hongggggggggggg/devops-demo" target="_blank">https://github.com/Hongggggggggggg/devops-demo</a></p>
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>Personal Projects</h2>
+            <p>My Side Projects and Portfolio</p>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>DevOps Demo</h3>
+                    <p><a href="https://github.com/Hongggggggggggg/devops-demo" target="_blank">https://github.com/Hongggggggggggg/devops-demo</a></p>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="education">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <div class="section-content">
-                <p><strong>FJU Information Management</strong> - Bachelor's Degree</p>
+    <!-- Education Section -->
+    <section id="education">
+        <div class="section-title">
+            <h2>Education</h2>
+            <p>My Academic Background</p>
+        </div>
+        <div class="education-container">
+            <div class="education-item">
+                <h3>FJU Information Management</h3>
+                <p>Bachelor's Degree</p>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
+    <!-- Contact Me Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <p>Feel Free to Reach Out to Me</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div class="contact-detail">
+                        <h3>Phone</h3>
+                        <p>+886 0929510661</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="contact-detail">
+                        <h3>Email</h3>
+                        <p>ryan900911@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div class="contact-detail">
+                        <h3>GitHub</h3>
+                        <p><a href="https://github.com/Hongggggggggggg" target="_blank">Hongggggggggggg</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Send me a message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="send-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Last Updated: April 13, 2025</p>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="tel:+886 0929510661" title="Contact by Phone"><i class="fas fa-phone"></i></a>
+                <a href="mailto:ryan900911@gmail.com" title="Contact by Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/Hongggggggggggg" target="_blank" title="GitHub Profile"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="footer-text">© 2025 Bo Hong Cho | Software Engineer & Test Automation Specialist | Last Updated: April 14, 2025</p>
+        </div>
     </footer>
+
+    <!-- JavaScript for menu toggle and smooth scrolling -->
+    <script>
+        // 漢堡選單功能
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        
+        // 點擊導航項目後關閉菜單
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+        
+        // 網頁滾動時收縮導航欄
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 100) {
+                navbar.style.padding = '10px 0';
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+            } else {
+                navbar.style.padding = '';
+                navbar.style.background = '';
+            }
+        });
+    </script>
 </body>
 </html>
