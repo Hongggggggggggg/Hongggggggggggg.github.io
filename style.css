@@ -734,6 +734,22 @@ footer {
   }
 }
 
+@media (max-width: 850px) {
+  .two-column-layout {
+    flex-direction: column;
+  }
+  
+  .column {
+    flex-basis: 100%;
+  }
+  
+  .experience-category {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-container {
     padding: 15px 20px;
@@ -787,5 +803,40 @@ footer {
   
   .hero-subtitle {
     font-size: 1.4em;
+  }
+  
+  .contact-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience-category {
+    padding: 20px;
+  }
+  
+  .achievement-item {
+    min-height: auto;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .achievement-title {
+    font-size: 0.95em;
+  }
+  
+  .achievement-desc {
+    font-size: 0.9em;
+  }
+  
+  .timeline-date {
+    width: 90px;
+    padding: 15px;
+    font-size: 0.8em;
+  }
+  
+  .timeline-content {
+    padding: 15px;
   }
 }
