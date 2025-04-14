@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta property="og:image" content="Image/View.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bo Hong Cho - Personal Website</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- 添加預覽圖片的元標籤 -->
+    <meta property="og:image" content="Image/View.jpg">
+    <!-- 添加隱藏的預覽圖片作為第一張圖片 -->
+    <link rel="preload" as="image" href="Image/View.jpg" style="display:none;">
 </head>
 <body>
+    <!-- 將 View.jpg 作為頁面第一張圖片但保持隱藏 -->
+    <img src="Image/View.jpg" alt="Background View" style="display:none;">
+    
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
